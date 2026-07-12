@@ -1,18 +1,19 @@
 import React from 'react'
 
 function App() {
-  const name="khadija"
-  const course="react"
-  const age=25
-  return (
+ const language = "javascript"
+ const experience = 1
+ const framework = "react"
+   return(
     <div>
-      <h1>Hello {name}!</h1>
-      <p>I am learning {course}</p>
-      <p>I am {age} years old</p>
-      <p>and next year i am{age+1} year old </p>
-      <p> Name in uppercases is {name.toUpperCase()} </p>
+      <p>language: {language}</p>
+      <p>experience: {experience} years</p>
+      <p>framework: {framework}</p>
+      <p>experience Next year: {experience+1}</p>
+      <p>framework Length: {framework.length}</p>
+      <p>Current Date: {new Date().toLocaleDateString()}</p>
     </div>
-  )
+   );
 }
 
 export default App
