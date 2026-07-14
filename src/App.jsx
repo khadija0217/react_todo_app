@@ -1,20 +1,24 @@
-import React from 'react'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Todo from "./components/Todo";
 
 function App() {
- const language = "javascript"
- const experience = 1
- const framework = "react"
-   return(
-    <div>
-      <p>language: {language}</p>
-      <p>experience: {experience} years</p>
-      <p>framework: {framework}</p>
-      <p>experience Next year: {experience+1}</p>
-      <p>framework Length: {framework.length}</p>
-      <p>Current Date: {new Date().toLocaleDateString()}</p>
-    </div>
-   );
+  return (
+    <>
+      <Header />
+
+      <h2>Today's Tasks</h2>
+
+      <ul>
+        <Todo task="Learn React" />
+        <Todo task="Learn JavaScript" />
+        <Todo task="Learn HTML" />
+        <Todo task="Learn CSS" />
+      </ul>
+
+      <Footer />
+    </>
+  );
 }
 
-export default App
-
+export default App;
